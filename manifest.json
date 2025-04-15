@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Link About",
+  "version": "1.0",
+  "description": "Wandelt About-URLs in klickbare Links",
+  "icons": {
+    "16": "icons/link-about-1024x1024-mono.svg",
+    "24": "icons/link-about-1024x1024-mono.svg",
+    "48": "icons/link-about-1024x1024-mono.svg",
+    "64": "icons/link-about-1024x1024-mono.svg",
+    "96": "icons/link-about-1024x1024-mono.svg",
+    "128": "icons/link-about-1024x1024-mono.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["linkabout.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

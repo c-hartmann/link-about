@@ -1,0 +1,8 @@
+* enable middle click?
+* enable page loading when clicked / in new tab opened
+* enable loading (set url) when opened in new window
+! browser.tabs.create({ url: "about:config" }) // This is blocked
+! browser.tabs.create({ url: "about:preferences" }); // Might not be blocked
+! from about:about these links all work (as it is a trusted page/site)
+
+* option link color: red (Default), none, #rrggbb
